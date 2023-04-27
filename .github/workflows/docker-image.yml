@@ -18,12 +18,12 @@ jobs:
       with:
         fetch-depth: 0
         
-    - name: Git semantic version
+    - name: Git Semantic Version
       uses: paulhatch/semantic-version@v4.0.2
       with:
         major_pattern: "(new-version)"
         minor_pattern: "(prod)"
-        format: "${major}.${minor}.${increment}"
+        format: "${new-version}.${prod}.${increment}"
       id: version
         
     - name: Docker Login
