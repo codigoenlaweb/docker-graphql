@@ -21,9 +21,9 @@ jobs:
     - name: Git Semantic Version
       uses: paulhatch/semantic-version@v4.0.2
       with:
-        major_pattern: "(new-version)"
+        major_pattern: "(newversion)"
         minor_pattern: "(prod)"
-        format: "${new-version}.${prod}.${increment}"
+        format: "${newversion}.${prod}.${increment}"
       id: version
         
     - name: Docker Login
