@@ -47,7 +47,3 @@ jobs:
       run: |
         docker push codeenlaweb/docker-graphql:$NEW_VERSION
         docker push codeenlaweb/docker-graphql
-      
-      
-      
-      
