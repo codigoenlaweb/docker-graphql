@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t codeenlaweb/docker-graphql:0.0.2 .
+        docker build -t codeenlaweb/docker-graphql:latest .
         
     - name: Push Docker image
       run: |
         docker push codeenlaweb/docker-graphql:0.0.2
+        docker push codeenlaweb/docker-graphql:latest
       
       
       
