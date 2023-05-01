@@ -22,7 +22,7 @@ jobs:
       uses: paulhatch/semantic-version@v4.0.2
       with:
         major_pattern: "(newversion)"
-        minor_pattern: "(prod)"
+        minor_pattern: "feat:"
         format: "${major}.${minor}.${increment}"
       id: version
         
